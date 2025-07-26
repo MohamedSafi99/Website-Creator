@@ -22,12 +22,20 @@ This full-stack project uses Google Gemini to generate fully responsive HTML5 la
 cd backend
 npm install
 cp .env.example .env # Add MONGO_URI & GEMINI_API_KEY
-npm run start:dev
+npm run start:dev ```
 
 
 ### Frontend
 
-```cd frontend
+cd frontend
 npm install
 cp .env.local.example .env.local # Add NEXT_PUBLIC_API_URL=http://localhost:3001
-npm run dev
+npm run dev ```
+
+
+
+## 📦 API
+
+POST /ideas — Generate and save a page
+GET /ideas/:id — Fetch a page by ID
+
